@@ -1,0 +1,79 @@
+
+  .inline-bordered-section {
+    display: inline-block;
+    border: 1px solid #000; /* Couleur de la bordure */
+    border-radius: 10px; /* Rayon de la bordure */
+    padding: 10px; /* Ajoutez un peu d'espace à l'intérieur pour séparer le texte de la bordure */
+    margin: 5px; /* Ajoutez une marge autour de chaque section */
+  }
+
+
+
+/* Ajoutez ces styles dans votre fichier CSS ou dans une balise <style> dans le document HTML */
+
+/* Conteneur principal */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Ajustez la largeur maximale selon vos besoins */
+  margin: 0 auto; /* Centre le contenu */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* Bouton de déconnexion */
+#logoutButton {
+  margin-top: 10px;
+}
+
+/* Styles pour les sections verticales */
+.vertical-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Styles pour les sections avec graphiques SVG */
+.statistics-section {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Styles pour les graphiques SVG */
+.chart-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.chart {
+  width: 100%;
+  height: auto;
+}
+
+/* Styles pour les sections de profil, niveau et XP */
+.inline-bordered-section {
+  width: calc(33.333% - 10px); /* Ajustez la largeur selon vos besoins avec un espace de 10px entre les sections */
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+/* Styles pour les éléments de profil, niveau et XP */
+#userProfile h3,
+#levelCount h3,
+#xpCount h3 {
+  margin-bottom: 5px;
+}
+
+#userProfile p,
+#levelCount p,
+#xpCount p {
+  margin: 0;
+}
+
+/* Styles pour les éléments responsables de la position du bouton de déconnexion */
+.float-right {
+  float: right;
+}
+
+/* Ajoutez d'autres styles de mise en page et de conception au besoin */
