@@ -47,7 +47,7 @@ async function getJWT() {
   try {
     const response = await fetch(signInEndpoint, requestOptions);
     if (!response.ok) {
-      throw new Error('Erreur lors de la demande de JWT');
+      throw new Error('invalid credential');
     }
 
     const jsonResponse = await response.json();

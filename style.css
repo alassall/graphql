@@ -1,14 +1,3 @@
-
-  .inline-bordered-section {
-    display: inline-block;
-    border: 1px solid #000; /* Couleur de la bordure */
-    border-radius: 10px; /* Rayon de la bordure */
-    padding: 10px; /* Ajoutez un peu d'espace à l'intérieur pour séparer le texte de la bordure */
-    margin: 5px; /* Ajoutez une marge autour de chaque section */
-  }
-
-
-
 /* Ajoutez ces styles dans votre fichier CSS ou dans une balise <style> dans le document HTML */
 
 /* Conteneur principal */
@@ -42,16 +31,18 @@
 .chart-container {
   width: 100%;
   box-sizing: border-box;
+  overflow: hidden; /* Empêcher le débordement des graphiques SVG */
 }
 
 .chart {
   width: 100%;
   height: auto;
+  max-width: 100%; /* Garantir que le graphique ne dépasse pas la largeur parente */
 }
 
 /* Styles pour les sections de profil, niveau et XP */
 .inline-bordered-section {
-  width: calc(33.333% - 10px); /* Ajustez la largeur selon vos besoins avec un espace de 10px entre les sections */
+  width: calc(44.333% - 10px);
   box-sizing: border-box;
   padding: 10px;
   border: 1px solid #ddd;
@@ -76,4 +67,16 @@
   float: right;
 }
 
-/* Ajoutez d'autres styles de mise en page et de conception au besoin */
+/* Ajoutez des médias requêtes pour ajuster la disposition */
+@media screen and (max-width: 768px) {
+  /* Styles spécifiques pour les écrans de taille maximale de 768 pixels */
+  .inline-bordered-section {
+    width: calc(100% - 10px); /* Ajustez la largeur pour une seule colonne à une petite taille d'écran */
+  }
+
+  .vertical-section {
+    flex-direction: column; /* Empilez les sections verticales sur les petits écrans */
+  }
+
+  /* Ajoutez d'autres styles responsifs au besoin */
+}

@@ -44,7 +44,7 @@ export function createHome() {
   
         <div id="statistics2" class="statistics-section inline-bordered-section">
           <!-- Section de statistiques avec des graphiques SVG -->
-          <h3>Audits</h3>
+          <h3>skills Technologies</h3>
           <!-- Graphique SVG 2 -->
           <div id="chart2" class="chart-container">
             <svg class="chart"></svg>
